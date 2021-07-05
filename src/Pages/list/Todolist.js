@@ -2,45 +2,49 @@ import {
   Container,
   Main,
   Form,
-  Image,
   Image2,
-  Fade,
-  Title,
-  InputEmail,
-  InputPassword,
-  RegisterButton,
-  RedirectLogin,
+  Image3,
+  Title2,
+  Title3,
+  Head,
+  P,
+  A,
+  List,
+  List1,
+  List2,
 } from "./styles";
-import logo from "../../Asses/img/logo.png";
 import fundo from "../../Asses/img/fundo.png";
+
+import logo from "../../Asses/img/logo.png";
+
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function login() {
   return (
     <Container>
+      <Image2 src={fundo} />
+      <Head>
+        <Image3 src={logo} />
+        <Link to="/login">
+          <A>Sair</A>
+        </Link>
+        <Title3>Seu Nome</Title3>
+        <P>seu_email@dominio.com</P>
+      </Head>
+      <List>
+        <List1>Dados Pessoais</List1>
+        <br />
+        <br />
+        <Link to="Todolist">
+          {" "}
+          <List2>TodoList</List2>
+        </Link>
+      </List>
       <Main>
-        {" "}
-        <Image2 src={fundo} />
-        <Fade right>
-          <Image src={logo} />
-        </Fade>
-        <Fade left>
-          <Form>
-            <Title>Faça seu Cadastro</Title>
-
-            <InputPassword type="Email" placeholder="E-mail"></InputPassword>
-            <InputPassword type="Password" placeholder="Senha"></InputPassword>
-
-            <Link to="/Todolist">
-              <RegisterButton>ENTRAR</RegisterButton>
-            </Link>
-
-            <Link to="/">
-              <RedirectLogin to="/Login">Não possuo Cadastro</RedirectLogin>
-            </Link>
-          </Form>
-        </Fade>
-      </Main>
+        <Form>
+          <Title2>/Todo list</Title2>
+        </Form>
+      </Main>{" "}
     </Container>
   );
 }
