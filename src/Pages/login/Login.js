@@ -23,23 +23,22 @@ function login() {
         <Fade right>
           <Image src={logo} />
         </Fade>
-        <Fade left>
-          <Form>
-            <Title>Faça seu Cadastro</Title>
-
-            <InputPassword type="Email" placeholder="E-mail"></InputPassword>
-            <InputPassword type="Password" placeholder="Senha"></InputPassword>
-
-            <Link to="/Perfil">
-              <RegisterButton>ENTRAR</RegisterButton>
-            </Link>
-
-            <Link to="/login">
-              <RedirectLogin to="/Login">Não possuo Cadastro</RedirectLogin>
-            </Link>
-          </Form>
-        </Fade>
+        <Fade left></Fade>
       </Main>
+      <Form>
+        <Title>Faça seu Cadastro</Title>
+
+        <InputPassword type="Email" placeholder="E-mail"></InputPassword>
+        <InputPassword type="Password" placeholder="Senha"></InputPassword>
+
+        <Link to="/Perfil">
+          <RegisterButton>ENTRAR</RegisterButton>
+        </Link>
+
+        <Link to="/">
+          <RedirectLogin to="/Login">Não possuo Cadastro</RedirectLogin>
+        </Link>
+      </Form>
     </Container>
   );
 }
