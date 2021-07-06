@@ -4,7 +4,6 @@ import {
   Form,
   Image,
   Image2,
-  Fade,
   Title,
   InputPassword,
   RegisterButton,
@@ -17,28 +16,29 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 function login() {
   return (
     <Container>
-      <Main>
+      {" "}
+      <div>
         {" "}
         <Image2 src={fundo} />
-        <Fade right>
-          <Image src={logo} />
-        </Fade>
-        <Fade left></Fade>
+      </div>
+      <Main>
+        {" "}
+        <Image src={logo} />
+        <Form>
+          <Title>Faça seu Cadastro</Title>
+
+          <InputPassword type="Email" placeholder="E-mail"></InputPassword>
+          <InputPassword type="Password" placeholder="Senha"></InputPassword>
+
+          <Link to="/Perfil">
+            <RegisterButton>ENTRAR</RegisterButton>
+          </Link>
+
+          <Link to="/">
+            <RedirectLogin to="/">Não possuo Cadastro</RedirectLogin>
+          </Link>
+        </Form>
       </Main>
-      <Form>
-        <Title>Faça seu Cadastro</Title>
-
-        <InputPassword type="Email" placeholder="E-mail"></InputPassword>
-        <InputPassword type="Password" placeholder="Senha"></InputPassword>
-
-        <Link to="/Perfil">
-          <RegisterButton>ENTRAR</RegisterButton>
-        </Link>
-
-        <Link to="/">
-          <RedirectLogin to="/Login">Não possuo Cadastro</RedirectLogin>
-        </Link>
-      </Form>
     </Container>
   );
 }

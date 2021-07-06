@@ -17,7 +17,7 @@ export const Main = styled.div`
   width: 100%;
   height: 100%;
 `;
-export const Form = styled.form`
+export const Form = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,6 +38,13 @@ export const Image2 = styled.img`
   height: 100%;
   width: 1320px;
   position: absolute;
+
+  @media (min-width: 1080px) {
+    display: flex;
+    height: 100%;
+    width: 1320px;
+    position: absolute;
+  }
 `;
 
 export const InputName = styled.input`

@@ -177,3 +177,7 @@ export const List2 = styled.a`
   opacity: 1;
   text-decoration: none;
 `;
+
+export const Remover = styled.a`
+  color: red;
+`;
