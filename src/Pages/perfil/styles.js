@@ -17,6 +17,7 @@ export const Form = styled.form`
 export const Form2 = styled.form`
   display: flex;
   flex-direction: column;
+  margin-top: 60px;
 `;
 export const Head = styled.div``;
 
