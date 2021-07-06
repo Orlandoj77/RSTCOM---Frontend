@@ -134,7 +134,21 @@ export const Title3 = styled.h2`
   opacity: 1;
   position: relative;
 `;
-export const Link = styled.a``;
+export const Title4 = styled.a`
+  top: 72px;
+  left: 336px;
+  width: 128px;
+  height: 24px;
+  text-align: left;
+  text-decoration: underline;
+  font: normal normal normal 18px/37px Segoe UI;
+  letter-spacing: 0px;
+  color: #757575;
+  opacity: 1;
+`;
+export const Div = styled.div`
+  padding: 30px 0px;
+`;
 export const A = styled.a`
   position: relative;
   top: -35px;
