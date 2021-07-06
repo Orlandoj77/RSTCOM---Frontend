@@ -6,7 +6,6 @@ import {
   Image2,
   Fade,
   Title,
-  InputEmail,
   InputPassword,
   RegisterButton,
   RedirectLogin,
