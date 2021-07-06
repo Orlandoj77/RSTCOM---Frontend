@@ -14,6 +14,7 @@ import {
   List1,
   List2,
   Remover,
+  InputCheckbox,
 } from "./styles";
 import fundo from "../../Asses/img/fundo.png";
 
@@ -45,7 +46,7 @@ function login() {
       <Main>
         <Form>
           <Title2>/Todo list</Title2>
-          <div>
+          <InputCheckbox>
             <input type="checkbox" />
             &emsp; <P2> Tarefa 1</P2> &emsp;<Remover>remover</Remover>
             <br />
@@ -62,7 +63,7 @@ function login() {
             <input type="checkbox" />
             &emsp;
             <P2>Tarefa 6</P2> &emsp;<Remover>remover</Remover>
-          </div>
+          </InputCheckbox>
         </Form>
       </Main>{" "}
     </Container>

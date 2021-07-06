@@ -13,6 +13,9 @@ export const Form = styled.form`
   border: 1px solid #707070;
   opacity: 1;
 `;
+export const InputCheckbox = styled.div`
+  margin-top: 30px;
+`;
 
 export const Form2 = styled.form`
   display: flex;
