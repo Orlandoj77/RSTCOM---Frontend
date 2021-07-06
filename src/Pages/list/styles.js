@@ -13,13 +13,13 @@ export const Form = styled.form`
   border: 1px solid #707070;
   opacity: 1;
 `;
-export const InputCheckbox = styled.div`
+
+export const InputsCheckbox = styled.div`
   margin-top: 30px;
 `;
 
-export const Form2 = styled.form`
-  display: flex;
-  flex-direction: column;
+export const InputBox = styled.input`
+  background-color: #308a1e;
 `;
 export const Head = styled.div``;
 
@@ -173,7 +173,18 @@ export const P2 = styled.a`
   color: #757575;
   opacity: 1;
 `;
-
+export const P3 = styled.a`
+  top: 286px;
+  left: 365px;
+  width: 51px;
+  height: 20px;
+  text-align: left;
+  text-decoration: line-through;
+  font: normal normal normal 15px/37px Segoe UI;
+  letter-spacing: 0px;
+  color: #757575;
+  opacity: 1;
+`;
 export const List = styled.a`
   position: relative;
   top: 168px;
@@ -197,4 +208,5 @@ export const List2 = styled.a`
 export const Remover = styled.a`
   color: red;
   text-decoration: underline;
+  font-family: italic;
 `;
