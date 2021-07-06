@@ -158,6 +158,19 @@ export const P = styled.a`
   color: #ffffff;
   opacity: 1;
 `;
+export const P2 = styled.a`
+  top: 286px;
+  left: 365px;
+  width: 51px;
+  height: 20px;
+  text-align: left;
+  text-decoration: underline;
+  font: normal normal normal 15px/37px Segoe UI;
+  letter-spacing: 0px;
+  color: #757575;
+  opacity: 1;
+`;
+
 export const List = styled.a`
   position: relative;
   top: 168px;
@@ -180,4 +193,5 @@ export const List2 = styled.a`
 
 export const Remover = styled.a`
   color: red;
+  text-decoration: underline;
 `;

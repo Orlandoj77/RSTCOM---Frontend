@@ -8,6 +8,7 @@ import {
   Title3,
   Head,
   P,
+  P2,
   A,
   List,
   List1,
@@ -45,30 +46,22 @@ function login() {
         <Form>
           <Title2>/Todo list</Title2>
           <div>
-            <p>
-              <input type="checkbox" />
-              Tarefa 1
-            </p>
-            <p>
-              <input type="checkbox" />
-              Tarefa 2
-            </p>
-            <p>
-              <input type="checkbox" />
-              Tarefa 3
-            </p>
-            <p>
-              <input type="checkbox" />
-              Tarefa 4
-            </p>
-            <p>
-              <input type="checkbox" />
-              Tarefa 5
-            </p>
-            <p>
-              <input type="checkbox" />
-              Tarefa 6<Remover>remover</Remover>
-            </p>
+            <input type="checkbox" />
+            &emsp; <P2> Tarefa 1</P2> &emsp;<Remover>remover</Remover>
+            <br />
+            <input type="checkbox" /> &emsp;<P2>Tarefa 2</P2> <br />
+            <input type="checkbox" /> &emsp;<P2>Tarefa 3</P2> <br />
+            <input type="checkbox" />
+            &emsp;
+            <P2>Tarefa 4</P2>
+            <br />
+            <input type="checkbox" />
+            &emsp;
+            <P2>Tarefa 5</P2> &emsp;<Remover>remover</Remover>
+            <br />
+            <input type="checkbox" />
+            &emsp;
+            <P2>Tarefa 6</P2> &emsp;<Remover>remover</Remover>
           </div>
         </Form>
       </Main>{" "}
